@@ -1,0 +1,254 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* VARIABLES */
+:root {
+    --primary-color: #003092;
+    --dark-color: #0F0F0F;
+    --gray-color: gray;
+
+    --h1-font-size: 40px;
+    --h2-font-size: 32px;
+    --small-font-size: 14px;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* outline: 1px solid red; */
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* GLOBAL CSS */
+section {
+    padding: 80px 0;
+}
+
+.header-section {
+    padding: 120px 0;
+}
+
+section,
+.section-title {
+    font-size: var(--h2-font-size);
+    font-weight: 800;
+    /* text-transform: uppercase; */
+}
+
+.btn-blue {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.text-blue {
+    color: var(--primary-color);
+}
+
+.text-dark {
+    color: var(--dark-color);
+}
+
+.fs-7 {
+    font-size: var(--small-font-size);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+/* CSS FOR SECTION */
+
+/* NAVBAR */
+.nav-link.active {
+    color: var(--primary-color) !important;
+    font-weight: 500;
+}
+
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active {
+    color: var(--primary-color);
+}
+
+/* HEADER */
+.header-section .header-img {
+    width: 90%;
+    border-radius: 15px;
+}
+
+/* PORTFOLIO */
+.portfolio-section .card .card-img-top {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ABOUT */
+.about-section {
+    /* background-color: #030304; */
+    background-color: gray;
+}
+
+.about-section .about-img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* BENEFIT */
+.benefit-section {
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(/images/bg-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*Efek scroll*/
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.benefit-content {
+    position: relative;
+    z-index: 1;
+}
+
+.benefit-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #79b5ff;
+    /* biru muda */
+}
+
+.benefit-box ul {
+    padding-left: 20px;
+}
+
+.benefit-box li {
+    margin-bottom: 6px;
+}
+
+.benefit-section .card {
+    box-shadow: 8px 8px 8px;
+    border: 0;
+    transition: 0.3s;
+}
+
+.benefit-section .card:hover{
+    cursor: pointer;
+    box-shadow: 15px 15px 15px;
+    transform: scaleX(1)
+}
+
+/* BENEFIT */
+
+/* PRODUCT */
+.product-section .card .card-img-top {
+    /* height: 500px; */
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-section .card .card-title {
+    align-items: center;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    transition: 0.3s ease;
+}
+
+/* CLIENTS */
+.clients-swiper .swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+/* CONTACT */
+.contact-section {
+    padding-bottom: 10px;
+}
+
+section .contact-section {
+    border-color: #003092;
+}
+
+.btn-blue:hover {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background-color: #0F0F0F;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 100px 0;
+    }
+
+    .header-section .col-md-6 {
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .header-section .header-img {
+        margin-top: 20px;
+        align-content: center;
+    }
+
+    .section-title,
+    .about-section {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .text-blue {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    section .portfolio-section {
+        margin-bottom: 10px;
+    }
+
+    .portfolio-section .card .card-img-top {
+        height: 100px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .portfolio-section {
+        padding-bottom: 10px;
+    }
+
+    .product-section {
+        padding-bottom: 20px;
+    }
+
+    .product-section .col-sm-6 {
+        padding-bottom: 15px;
+    }
+
+    .contact-section {
+        margin-bottom: 10px;
+    }
+}
