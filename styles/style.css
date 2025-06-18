@@ -102,7 +102,7 @@ section,
 /* ABOUT */
 .about-section {
     /* background-color: #030304; */
-    background-color: gray;
+    background-color: rgb(177, 171, 171);
 }
 
 .about-section .about-img {
@@ -182,7 +182,9 @@ section,
 
 /* CONTACT */
 .contact-section {
-    padding-bottom: 10px;
+    background-color: #003092;
+    padding: 30px 0;
+    color: white;
 }
 
 section .contact-section {
@@ -246,9 +248,5 @@ footer {
 
     .product-section .col-sm-6 {
         padding-bottom: 15px;
-    }
-
-    .contact-section {
-        margin-bottom: 10px;
     }
 }
