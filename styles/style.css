@@ -41,6 +41,7 @@ section {
 }
 
 .header-section {
+    height: fit-content;
     padding: 120px 0;
 }
 
