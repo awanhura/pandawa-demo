@@ -265,7 +265,7 @@ footer {
     }
 
     .header-section {
-        height: fit-content;
+        height: auto;
         justify-content: center;
         align-items: center;
         align-content: center;
