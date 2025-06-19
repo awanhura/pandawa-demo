@@ -73,6 +73,12 @@ section,
     border-color: var(--primary-color);
 }
 
+.card,
+.swiper-slide {
+    will-change: transform;
+}
+
+
 /* CSS FOR SECTION */
 
 /* NAVBAR */
@@ -110,9 +116,9 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     /*Efek scroll*/
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .header-section .header-img {
@@ -145,7 +151,7 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     /*Efek scroll*/
     padding: 60px 0;
     overflow: hidden;
@@ -357,6 +363,21 @@ footer {
 
     .navbar-toggler {
         margin-right: 10px;
+    }
+
+    .header-section .header-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-section .header-info h2 {
+        font-size: 25px;
+        padding-top: 3px;
+    }
+
+    .header-section .header-info p {
+        font-size: 16px;
+        /* padding-top: 3px; */
     }
 
     .about-section {
