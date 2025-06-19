@@ -429,6 +429,17 @@
   </footer>
   <!-- FOOTER END -->
 
+  <!-- Layar 100vh -->
+  <script>
+    function setVh() {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+    setVh();
+    window.addEventListener('resize', setVh);
+  </script>
+
+
   <!-- AOS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
