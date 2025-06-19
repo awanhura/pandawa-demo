@@ -28,42 +28,42 @@
 
 <body>
   <!-- NAVBAR START -->
-  <nav class="navbar navbar-expand-lg bg-white fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="images/pandawa_remove_bg.png" alt="Bootstrap" width="50" height="50" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-1">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNavbar">
+    <!-- <div class="container"> -->
+    <a class="navbar-brand" href="#">
+      <img src="images/pandawa_remove_bg.png" alt="WLP Pandawa Lima" width="50" height="50" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-1">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
+    <!-- </div> -->
   </nav>
   <!-- NAVBAR END -->
 
   <!-- HEADER START -->
   <section class="header-section" id="header">
     <div class="container">
-      <div class="row align-items-center justify-content-between">
+      <div class="row align-items-center justify-content-between mt-5">
         <div class="col-md-6" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
           <p class="text-blue fs-7 mb-4">
             TALENT | ORGANIZATION | TECHNOLOGY
@@ -76,13 +76,13 @@
 
           <div class="header-info d-flex align-items-center gap-3 mt-5">
             <div class="d-flex align-items-center gap-2">
-              <h2 id="count1" class="header-count fw-bold mb-0">0</h2>
+              <h2 id="count1" class="header-count text-blue fw-bold mb-0">0</h2>
               <p class="text-secondary fs-7 mb-0">
                 Qualified <br />Jobseekers
               </p>
             </div>
             <div class="d-flex align-items-center gap-2">
-              <h2 id="count2" class="header-count fw-bold mb-0">0</h2>
+              <h2 id="count2" class="header-count text-blue fw-bold mb-0">0</h2>
               <p class="text-secondary fs-7 mb-0">
                 Jobseekers<br />have Worked
               </p>
@@ -90,23 +90,23 @@
           </div>
         </div>
         <!-- Header image -->
-        <div class="d-flex col-md-4" data-aos="fade-left" data-aos-duration="1000">
+        <!-- <div class="d-flex col-md-4" data-aos="fade-left" data-aos-duration="1000">
           <img src="images/header-img-portrait.jpg" class="header-img mx-auto" alt="" />
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
   <!-- HEADER END -->
 
   <!-- ABOUT START -->
-  <section class="about-section" id="about" data-aos="fade-up" data-aos-duration="1200">
+  <section class="about-section" id="about">
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-md-5">
-          <img src="images/about.jpg" class="about-img" alt="" />
+          <img src="images/about.jpg" class="about-img" alt="WLP Pandawa Lima">
         </div>
-        <div class="col-md-6 mt-3">
-          <p class="text-blue fs-5">About</p>
+        <div class="col-md-6">
+          <p class="text-white fs-5">About</p>
           <p class="about-section fs-6 text-white justify-content-between">
             PT WLP Pandawa Lima (WLP) is a professional recruitment services
             company established in 2021 and headquartered in Jakarta.
@@ -141,7 +141,7 @@
             <div class="card h-100 border-0">
               <div class="card-body">
                 <h5 class="card-title fw-semibold fs-4 text-blue text-center mb-3">COST-EFFECTIVE</h5>
-                <p class="card-text fs-6 fw-bold">The expenses incurred by your company already include:</p>
+                <p class="card-text fs-6 fw-semibold">The expenses incurred by your company already include:</p>
                 <div class="benefit-lists fs-6 fw-semibold align-items-start">
                   <ul class="list-unstyled">
                     <li class="d-flex align-items-start mb-2"><i
@@ -167,7 +167,7 @@
             <div class="card h-100 border-0">
               <div class="card-body">
                 <h5 class="card-title fw-semibold fs-4 text-blue text-center mb-3">EFFICIENT</h5>
-                <p class="card-text fs-6 fw-bold">Your company will experience:</p>
+                <p class="card-text fs-6 fw-semibold">Your company will experience:</p>
                 <div class="benefit-lists fs-6 fw-semibold align-items-start">
                   <ul class="list-unstyled">
                     <li class="d-flex align-items-start mb-2"><i
@@ -193,7 +193,7 @@
             <div class="card h-100 border-0">
               <div class="card-body">
                 <h5 class="card-title fw-semibold fs-4 text-blue text-center mb-3">ADVANTAGES</h5>
-                <p class="card-text fs-6 fw-bold">Key benefits of partnering with WLP for your company:</p>
+                <p class="card-text fs-6 fw-semibold">Key benefits of partnering with WLP for your company:</p>
                 <div class="benefit-lists fs-6 fw-semibold align-items-start">
                   <ul class="list-unstyled">
                     <li class="d-flex align-items-start mb-2"><i
@@ -224,35 +224,36 @@
   <!-- PORTFOLIO START -->
   <section class="portfolio-section" id="portfolio">
     <div class="container">
-      <p class="text-blue fs-5" data-aos="fade-right" data-aos-duration="500">Portfolio</p>
-      <h2 class="section-title" data-aos="fade-right" data-aos-duration="600">Placement Highlights</h2>
+      <p class="text-blue fs-5">Portfolio</p>
+      <h2 class="section-title">Placement Highlights</h2>
 
       <div class="swiper portfolio-swiper">
         <div class="swiper-wrapper text-center">
           <div class="swiper-slide">
-            <div class="card" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="50">
+            <!-- data-aos="fade-down" data-aos-duration="1000" data-aos-delay="50" -->
+            <div class="card">
               <div class="card-body">
                 <img src="images/portfolio-0.jpg" alt="" class="card-img-top rounded mb-3" />
                 <h6 class="fs-7">IT</h6>
-                <a href="#" class="text-blue fw-semibold">2500+</a>
+                <a href="#portfolio" class="text-blue fw-semibold">2500+</a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="card" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="150">
+            <div class="card">
               <div class="card-body">
                 <img src="images/portfolio-1.jpg" alt="" class="card-img-top rounded mb-3" />
                 <h6 class="fs-7">Security Officer</h6>
-                <a href="#" class="text-blue fw-semibold">350+</a>
+                <a href="#portfolio" class="text-blue fw-semibold">350+</a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="card" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
-              <div class="card-body">
+            <div class="card">
+              <div class="card-body justify-content-center">
                 <img src="images/portfolio-2.jpg" alt="" class="card-img-top rounded mb-3" />
                 <h6 class="fs-7">Finance</h6>
-                <a href="#" class="text-blue fw-semibold">500+</a>
+                <a href="#portfolio" class="text-blue fw-semibold">500+</a>
               </div>
             </div>
           </div>
@@ -300,11 +301,11 @@
   <!-- PRODUCT START -->
   <section class="product-section mt-0" id="services">
     <div class="container">
-      <p class="text-blue fs-5 mb-1" data-aos="fade-right" data-aos-duration="250">Product</p>
-      <h2 class="section-title" data-aos="fade-right" data-aos-duration="350">Service We Provide</h2>
+      <p class="text-blue fs-5">Product</p>
+      <h2 class="section-title">Service We Provide</h2>
       <div class="row d-flex">
         <div class="col-sm-6 mb-0">
-          <div class="card h-100" data-aos="fade-up" data-aos-duration="1000">
+          <div class="card h-100">
             <div class="card-body text-center h-100">
               <div class="product-img mb-3">
                 <img src="images/product-1.jpg" alt="" class="card-img-top rounded" />
@@ -327,7 +328,7 @@
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card h-100" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+          <div class="card h-100">
             <div class="card-body text-center align-items-center h-100">
               <div class="product-img">
                 <img src="images/product-3.jpg" alt="" class="card-img-top rounded mb-3" />
@@ -356,12 +357,12 @@
 
   <!-- CLIENTS START -->
   <section class="clients-section py-5" id="clients">
-    <div class="container text-center" data-aos="fade-down" data-aos-duration="1000">
+    <div class="container text-center">
       <h2 class="section-title text-blue mb-3">Our Clients</h2>
       <p class="text-secondary fs-7 mb-5">Trusted by hundreds of clients across various industries, we consistently
         deliver qualified professionals to meet the unique needs of IT, security, and other sectors.</p>
-      <div class="swiper clients-swiper" data-aos="fade-right" data-aos-duration="1000">
-        <div class="swiper-wrapper align-items-center gap-3">
+      <div class="swiper clients-swiper">
+        <div class="swiper-wrapper align-items-center gap-3 mb-5">
           <div class="swiper-slide">
             <img src="images/clients-1.png" alt="Client 1" class="client-logo" />
           </div>
@@ -386,10 +387,8 @@
   </section>
   <!-- CLIENTS END -->
 
-  <!-- CLIENTS END -->
-
   <!-- CONTACT START -->
-  <section class="d-flex contact-section mt-0" id="contact">
+  <section class="d-flex contact-section mt-3" id="contact">
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-md-6">
@@ -401,7 +400,8 @@
 
           <div class="d-flex align-items-center gap-2 mb-3">
             <i class="bx bx-map text-white fs-3"></i>
-            <div class="mb-0 fs-7 fw-semibold">Wisma Kodel, 9th Floor <br> Jl. H.R. Rasuna Said Kav. B-4, South Jakarta 12910</div>
+            <div class="mb-0 fs-7 fw-semibold">Wisma Kodel, 9th Floor <br> Jl. H.R. Rasuna Said Kav. B-4, South Jakarta
+              12910</div>
           </div>
           <div class="d-flex align-items-center gap-2 mb-3">
             <i class="bx bxs-phone text-white fs-3"></i>
@@ -413,7 +413,7 @@
           </div>
           <div class="d-flex align-items-center gap-2 mb-3">
             <i class="bx bx-globe text-white fs-3"></i>
-            <div class="mb-0 fs-7 fw-semibold">pandawalima.co.id</div>
+            <div class="mb-0 fs-7 fw-none">pandawalima.co.id</div>
           </div>
         </div>
       </div>
@@ -421,7 +421,7 @@
   </section>
   <!-- CONTACT END -->
 
-  <!-- FOOTER START --> 
+  <!-- FOOTER START -->
   <footer class="py-3 text-center">
     <div class="container">
       <p class="text-white fs-7 mb-0">Copyright &copy; 2025 WLP Pandawa Lima, All Rights Reserved.</p>
@@ -574,6 +574,18 @@
       });
     });
   </script>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      const navbar = document.getElementById("mainNavbar");
+      if (window.scrollY > 0) {
+        navbar.classList.add("navbar-scrolled");
+      } else {
+        navbar.classList.remove("navbar-scrolled");
+      }
+    });
+  </script>
+
 </body>
 
 </html>
