@@ -265,7 +265,7 @@ footer {
     }
 
     .header-section {
-        height: 100vh;
+        height: fit-content;
         justify-content: center;
         align-items: center;
         align-content: center;
@@ -274,6 +274,21 @@ footer {
 
     .header-section .header-info {
         justify-content: center;
+    }
+
+    .header-section .header-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-section .header-info h2 {
+        font-size: 25px;
+        padding-top: 3px;
+    }
+
+    .header-section .header-info p {
+        font-size: 16px;
+        /* padding-top: 3px; */
     }
 
     /* .header-section .header-img {
