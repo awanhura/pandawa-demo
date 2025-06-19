@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WLP Pandawa Lima</title>
+    <link rel="icon" href="images/pandawa_remove_bg.png" type="image/x-icon">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css" />
+
+    <!-- BOXICONS -->
+    <link rel="stylesheet" href="vendors/boxicons/css/boxicons.min.css" />
+
+    <!-- SWIPERJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- AOS ANIMATION -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- LOCAL CSS -->
+    <link rel="stylesheet" href="styles/porto.css" />
+</head>
+
+<body>
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNavbar">
+        <!-- <div class="container"> -->
+        <a class="navbar-brand" href="#">
+            <img src="images/pandawa_remove_bg.png" alt="WLP Pandawa Lima" width="50" height="50" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav text-black ms-auto mb-2 mb-lg-0 gap-1">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="fade-in">Welcome to <br> Pandawa Lima Projects Gallery</h1>
+                <p class="fade-in text-dark">Explore the milestones we've achieved throughout the years</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Gallery -->
+        <section class="portfolio-section">
+            <div class="container">
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-subtitle">Showcasing our work through impactful visuals across multiple sectors.
+                </p>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="it">Tech & IT</button>
+                    <button class="filter-btn" data-filter="security">Security</button>
+                    <!-- <button class="filter-btn" data-filter="finance">Finance</button> -->
+                    <button class="filter-btn" data-filter="others">Others</button>
+                </div>
+
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- IT Projects -->
+                    <div class="gallery-item" data-category="it">
+                        <div class="gallery-image">
+                            <img src="images/header-img-portrait.jpg" alt="">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">AstraPay Projects</div>
+                            <div class="gallery-description"></div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="gallery-item" data-category="it">
+                        <div class="gallery-image">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Sicepat Ekspres Indonesia</div>
+                            <div class="gallery-description">Provision of security services for SiCepat Ekspres
+                                locations across Indonesia, supported by a workforce of over 100 security personnel.
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- Security Projects -->
+                    <div class="gallery-item" data-category="security">
+                        <div class="gallery-image">
+                            <img src="images/project_sicepat.jpg" alt="Sicepat Ekspres Project">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Sicepat Ekspres Indonesia</div>
+                            <div class="gallery-description">Provision of security services for SiCepat Ekspres
+                                locations across Indonesia, supported by a workforce of over 100 security personnel.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="security">
+                        <div class="gallery-image">
+                            <img src="images/project_giyanti.jpg" alt="Giyanti Coffee Roastery Project">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Giyanti Coffee Roastery</div>
+                            <div class="gallery-description">Deployment of security services for Giyanti Coffee Shop at
+                                its Menteng (Central Jakarta) and Cipete (South Jakarta) branches.</div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="gallery-item" data-category="security">
+                        <div class="gallery-image">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Access Control System</div>
+                            <div class="gallery-description">Implementasi sistem kontrol akses biometrik untuk gedung
+                                pemerintahan dengan tingkat keamanan tinggi.</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="security">
+                        <div class="gallery-image">
+                            <i class="fas fa-fire-extinguisher"></i>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Fire Safety System</div>
+                            <div class="gallery-description">Pemasangan sistem pemadam kebakaran otomatis dengan sensor
+                                asap dan alarm terintegrasi untuk pabrik manufaktur.</div>
+                        </div>
+                    </div> -->
+
+                    <!-- Finance Projects
+                    <div class="gallery-item" data-category="finance">
+                        <div class="gallery-image">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-title"></div>
+                            <div class="gallery-description"></div>
+                        </div>
+                    </div> -->
+
+                    <div class="gallery-item" data-category="others">
+                        <div class="gallery-image">
+                            <i class="bx bx-gift"></i>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Content will be available soon</div>
+                            <div class="gallery-description"></div>
+                        </div>
+                    </div>
+
+                    <!-- More Projects -->
+                    <div class="gallery-item" data-category="others">
+                        <div class="gallery-image">
+                            <i class="bx bx-gift"></i>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Content will be available soon</div>
+                            <div class="gallery-description"></div>
+                        </div>
+                    </div>
+
+                    <!-- More Projects -->
+                    <div class="gallery-item" data-category="others">
+                        <div class="gallery-image">
+                            <i class="bx bx-gift"></i>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Content will be available soon</div>
+                            <div class="gallery-description"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <!-- <section class="services">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Your one-stop solution for enterprise Talent, Law and others.
+                </p>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="service-title">WL</div>
+                        <div class="service-description">Pengembangan aplikasi custom sesuai kebutuhan bisnis dengan
+                            teknologi terdepan dan metodologi Agile.</div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="service-title">Cybersecurity Solutions</div>
+                        <div class="service-description">Implementasi sistem keamanan cyber komprehensif untuk
+                            melindungi aset digital perusahaan dari ancaman online.</div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="service-title">Business Intelligence</div>
+                        <div class="service-description">Solusi analytics dan reporting untuk mendukung pengambilan
+                            keputusan bisnis berbasis data.</div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <!-- CONTACT START -->
+    <section class="d-flex contact-section mt-3" id="contact">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6">
+                    <p class="text-white fs-5 fw-semibold">Contact Us</p>
+                    <p class="text-white fs-7 fw-semibold mb-3">
+                        You may reach us by email or phone during business hours, from 10:00 a.m. to 5:00 p.m., Monday
+                        to Friday.
+                    </p>
+
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="bx bx-map text-white fs-3"></i>
+                        <div class="mb-0 fs-7 fw-semibold">Wisma Kodel, 9th Floor <br> Jl. H.R. Rasuna Said Kav. B-4,
+                            South Jakarta
+                            12910</div>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="bx bxs-phone text-white fs-3"></i>
+                        <div class="mb-0 fs-7 fw-semibold">(021) 522 2286</div>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="bx bx-envelope text-white fs-3"></i>
+                        <div class="mb-0 fs-7 fw-semibold">info@wlp.co.id</div>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="bx bx-globe text-white fs-3"></i>
+                        <div class="mb-0 fs-7 fw-none">pandawalima.co.id</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT END -->
+
+    <!-- FOOTER START -->
+    <footer class="py-3 text-center">
+        <div class="container">
+            <p class="text-white fs-7 mb-0">Copyright &copy; 2025 WLP Pandawa Lima, All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent">
+                <!-- Modal content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Filter functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            const modal = document.getElementById('projectModal');
+            const closeModal = document.querySelector('.close');
+
+            // Filter functionality
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const filterValue = this.getAttribute('data-filter');
+
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Filter gallery items
+                    galleryItems.forEach(item => {
+                        const itemCategory = item.getAttribute('data-category');
+
+                        if (filterValue === 'all' || itemCategory === filterValue) {
+                            item.style.display = 'block';
+                            item.style.animation = 'fadeInUp 0.5s ease';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // // Modal functionality
+            // galleryItems.forEach(item => {
+            //     item.addEventListener('click', function () {
+            //         const title = this.querySelector('.gallery-title').textContent;
+            //         const description = this.querySelector('.gallery-description').textContent;
+            //         const category = this.getAttribute('data-category');
+
+            //         const modalContent = `
+            //             <h2 style="color: #4a5568; margin-bottom: 1rem;">${title}</h2>
+            //             <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 0.5rem 1rem; border-radius: 20px; display: inline-block; margin-bottom: 1rem; font-size: 0.9rem; text-transform: uppercase; font-weight: bold;">
+            //                 ${category.replace('-', ' ')}
+            //             </div>
+            //             <p style="color: #718096; line-height: 1.8; margin-bottom: 2rem;">${description}</p>
+            //             <div style="border-top: 1px solid #e2e8f0; padding-top: 1.5rem;">
+            //                 <h3 style="color: #4a5568; margin-bottom: 1rem;">Detail Project:</h3>
+            //                 <ul style="list-style: none; padding: 0;">
+            //                     <li style="margin-bottom: 0.5rem; color: #718096;"><i class="fas fa-calendar" style="color: #667eea; margin-right: 0.5rem;"></i> Timeline: 3-6 bulan</li>
+            //                     <li style="margin-bottom: 0.5rem; color: #718096;"><i class="fas fa-users" style="color: #667eea; margin-right: 0.5rem;"></i> Tim: 5-10 specialists</li>
+            //                     <li style="margin-bottom: 0.5rem; color: #718096;"><i class="fas fa-check-circle" style="color: #667eea; margin-right: 0.5rem;"></i> Status: Completed Successfully</li>
+            //                 </ul>
+            //             </div>
+            //         `;
+
+            //         document.getElementById('modalContent').innerHTML = modalContent;
+            //         modal.style.display = 'block';
+            //         document.body.style.overflow = 'hidden';
+            //     });
+            // });
+
+            // Close modal
+            closeModal.addEventListener('click', function () {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            });
+
+            window.addEventListener('click', function (e) {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+
+            // Smooth scrolling for navigation
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Add scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all gallery items and service cards
+            document.querySelectorAll('.gallery-item, .service-card, .stat-item').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+    <script>
+        // Tutup navbar saat halaman discroll
+        window.addEventListener('scroll', function () {
+            const nav = document.querySelector('.navbar-collapse');
+            const bsCollapse = bootstrap.Collapse.getInstance(nav); // Khusus Bootstrap 5
+            if (nav.classList.contains('show')) {
+                bsCollapse.hide();
+            }
+        });
+
+        // Tutup navbar saat menu diklik
+        document.querySelectorAll('.navbar-collapse .nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const nav = document.querySelector('.navbar-collapse');
+                const bsCollapse = bootstrap.Collapse.getInstance(nav); // Khusus Bootstrap 5
+                if (nav.classList.contains('show')) {
+                    bsCollapse.hide();
+                }
+            });
+        });
+    </script>
+
+    <!-- Navbar Items berubah warna menjadi biru ketika active -->
+    <script>
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                if (scrollY >= sectionTop - 50) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove("active");
+                if (link.getAttribute("href") === "#" + current) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            const navbar = document.getElementById("mainNavbar");
+            if (window.scrollY > 0) {
+                navbar.classList.add("navbar-scrolled");
+            } else {
+                navbar.classList.remove("navbar-scrolled");
+            }
+        });
+    </script>
+
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.umd.js"></script>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            const navbar = document.getElementById("mainNavbar");
+            if (window.scrollY > 0) {
+                navbar.classList.add("navbar-scrolled");
+            } else {
+                navbar.classList.remove("navbar-scrolled");
+            }
+        });
+    </script>
+</body>
+
+</html>

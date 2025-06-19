@@ -38,7 +38,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-1">
+      <ul class="navbar-nav text-black ms-auto mb-2 mb-lg-0 gap-1">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
@@ -46,7 +46,7 @@
           <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#portfolio">Portfolio</a>
+          <a class="nav-link" href="porto.html">Portfolio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#services">Services</a>
@@ -63,7 +63,7 @@
   <!-- HEADER START -->
   <section class="header-section" id="header">
     <div class="container">
-      <div class="row align-items-center justify-content-between mt-5">
+      <div class="row align-items-center justify-content-between">
         <div class="col-md-6" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
           <p class="text-blue fs-7 mb-4">
             TALENT | ORGANIZATION | TECHNOLOGY
@@ -235,7 +235,7 @@
               <div class="card-body">
                 <img src="images/portfolio-0.jpg" alt="" class="card-img-top rounded mb-3" />
                 <h6 class="fs-7">IT</h6>
-                <a href="#portfolio" class="text-blue fw-semibold">2500+</a>
+                <a href="/porto.html" class="btn btn-primary">Details</a>
               </div>
             </div>
           </div>
@@ -244,7 +244,7 @@
               <div class="card-body">
                 <img src="images/portfolio-1.jpg" alt="" class="card-img-top rounded mb-3" />
                 <h6 class="fs-7">Security Officer</h6>
-                <a href="#portfolio" class="text-blue fw-semibold">350+</a>
+                <a href="/porto.html" class="btn btn-primary">Details</a>
               </div>
             </div>
           </div>
@@ -253,7 +253,7 @@
               <div class="card-body justify-content-center">
                 <img src="images/portfolio-2.jpg" alt="" class="card-img-top rounded mb-3" />
                 <h6 class="fs-7">Finance</h6>
-                <a href="#portfolio" class="text-blue fw-semibold">500+</a>
+                <a href="/porto.html" class="btn btn-primary">Details</a>
               </div>
             </div>
           </div>
@@ -262,7 +262,7 @@
               <div class="card-body">
                 <img src="images/portfolio-3.jpg" alt="" class="card-img-top rounded mb-3" />
                 <h6 class="fs-7">Accounting</h6>
-                <a href="#" class="text-blue fw-semibold">300+</a>
+                <a href="/porto.html" class="btn btn-primary">Details</a>
               </div>
             </div>
           </div>
@@ -271,7 +271,7 @@
               <div class="card-body">
                 <img src="images/portfolio-5.jpg" alt="" class="card-img-top rounded mb-3" />
                 <h6 class="fs-7">Operational</h6>
-                <a href="#" class="text-blue fw-semibold">1000+</a>
+                <a href="/porto.html" class="btn btn-primary">Details</a>
               </div>
             </div>
           </div>
@@ -280,7 +280,7 @@
               <div class="card-body">
                 <img src="images/portfolio-6.jpg" alt="" class="card-img-top rounded mb-3" />
                 <h6 class="fs-7">Sales & Marketing</h6>
-                <a href="#" class="text-blue fw-semibold">1000+</a>
+                <a href="/porto.html" class="btn btn-primary">Details</a>
               </div>
             </div>
           </div>
@@ -392,8 +392,8 @@
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-md-6">
-          <p class="text-white fs-5 fw-semibold">Contact</p>
-          <h2 class="section-title mb-3">Get In Touch</h2>
+          <p class="text-white fs-5 fw-semibold">Contact Us</p>
+          <!-- <h2 class="section-title mb-3">Get In Touch</h2> -->
           <p class="text-white fs-7 fw-semibold mb-3">
             You may reach us by email or phone during business hours, from 10:00 a.m. to 5:00 p.m., Monday to Friday.
           </p>
@@ -460,7 +460,7 @@
   <!-- Animasi angka Start -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // Bagian 1: Buat objek animasi angka
+      // Bagian 1: objek animasi angka
       const count1 = new countUp.CountUp('count1', 10000, {
         duration: 3.5,
         separator: ',',
@@ -473,7 +473,7 @@
         suffix: '+'
       });
 
-      // Bagian 2: Tentukan target elemen yang harus terlihat dulu sebelum animasi jalan
+      // Bagian 2: menentukan target elemen yang harus terlihat dulu sebelum animasi jalan
       const target = document.querySelector('.header-info');
 
       // Bagian 3: Buat observer untuk mendeteksi apakah elemen terlihat di layar
