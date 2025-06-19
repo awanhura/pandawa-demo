@@ -377,7 +377,8 @@ footer {
     }
 
     .header-section{
-        height: 100vh;
+        height: fit-content;
+
     }
 
     .navbar-toggler {
