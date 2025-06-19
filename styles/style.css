@@ -42,7 +42,6 @@ section {
 
 .header-section {
     height: fit-content;
-    padding: 120px 0;
 }
 
 section,
@@ -266,7 +265,7 @@ footer {
     }
 
     .header-section {
-        height: auto;
+        height: 100vh;
         justify-content: center;
         align-items: center;
         align-content: center;
@@ -375,6 +374,10 @@ footer {
     .navbar-nav,
     a {
         padding: 0 10px;
+    }
+
+    .header-section{
+        height: 100vh;
     }
 
     .navbar-toggler {
